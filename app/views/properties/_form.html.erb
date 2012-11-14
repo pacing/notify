@@ -1,0 +1,13 @@
+<%= form_for (@property) do |f| %>
+<%= @property.errors.full_messages.each do |msg| %>
+<%= msg %>
+<% end %>
+   <%= f.label :keyword %><%= f.text_field :keyword%>
+   <%= f.label :description %><%= f.text_area :description%>
+   <%= f.label :date %><%= f.text_field :time%>
+   <%= f.label :your_name %><%= f.text_field :name%>
+   <%= f.label :studentID %><%= f.text_field :studentID%>
+   <%= f.label :contact %><%= f.text_field :contact%>
+   <%= f.label :isfound %><%= f.text_field :isfound%>
+   <%= f.submit%>
+<% end %>

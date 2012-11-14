@@ -1,0 +1,16 @@
+<% @property.each do |p| %>
+  
+   <%= p.keyword %>
+   <%= p.description %>
+   <%= p.name %>
+   <%= p.contact %>
+   <%= p.studentID %>
+   <%= p.time %>
+   <%= p.isfound %>
+   <br />
+   <%= link_to "详情", p %>
+   <br />
+
+<% end %>
+
+<%= link_to "发布信息", new_property_path%>
